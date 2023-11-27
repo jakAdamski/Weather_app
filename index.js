@@ -22,22 +22,22 @@ document.querySelector('.weather_display').style.display = "block";
 document.querySelector('.error_box').style.display = "none";
 switch (data.weather[0].main) {
     case 'Clear':
-        weatherIcon.src = "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-01-1024.png"
+        weatherIcon.src = "/public/weather-icons/sunny.png"
         break;
     case 'Rain':
-        weatherIcon.src = "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-32-1024.png"
+        weatherIcon.src = "/public/weather-icons/rain.png"
         break;
     case 'Clouds':
-        weatherIcon.src = "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-27-1024.png"
+        weatherIcon.src = "/public/weather-icons/cloudy.png"
         break;
     case 'Drizzle':
-        weatherIcon.src = "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-30-1024.png"
+        weatherIcon.src = "/public/weather-icons/drizzle.png"
         break;
     case 'Snow':
-        weatherIcon.src = "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-25-1024.png"
+        weatherIcon.src = "/public/weather-icons/snow.png"
         break;
     case 'Thunderstorm':
-        weatherIcon.src = "https://cdn2.iconfinder.com/data/icons/weather-color-2/500/weather-23-1024.png"
+        weatherIcon.src = "/public/weather-icons/thunderstorm.png"
         break;
     default:
         break;
