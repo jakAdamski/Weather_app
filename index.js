@@ -22,10 +22,10 @@ document.querySelector('.weather_display').style.display = "block";
 document.querySelector('.error_box').style.display = "none";
 switch (data.weather[0].main) {
     case 'Clear':
-        weatherIcon.src = "/public/weather-icons/sunny.png"
+        weatherIcon.src = "public/weather-icons/sunny.png"
         break;
     case 'Rain':
-        weatherIcon.src = "/public/weather-icons/rain.png"
+        weatherIcon.src = "public/weather-icons/rain.png"
         break;
     case 'Clouds':
         weatherIcon.src = "/public/weather-icons/cloudy.png"
@@ -39,7 +39,7 @@ switch (data.weather[0].main) {
     case 'Thunderstorm':
         weatherIcon.src = "/public/weather-icons/thunderstorm.png"
         break;
-    default:
+    default:"";
         break;
 }
 
